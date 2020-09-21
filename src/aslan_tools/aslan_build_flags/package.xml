@@ -2,7 +2,7 @@
 <package>
   <name>aslan_build_flags</name>
   <version>1.0.0</version>
-  <description>Common build flags for Aslan.</description>
+  <description>Common build flags for StreetDrone.</description>
 
   <maintainer email="abdelrahman.barghout@streetdrone.com">Abdelrahman Barghouth</maintainer>
 
