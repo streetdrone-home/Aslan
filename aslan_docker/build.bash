@@ -8,8 +8,7 @@ cd $BASEDIR
 cp -ar ../src ./src
 cp ../run ./run
 
-sudo docker build -t aslan_docker .
-
+sudo docker build -t projaslan/aslan:melodic .
 
 rm -r src
 rm run
