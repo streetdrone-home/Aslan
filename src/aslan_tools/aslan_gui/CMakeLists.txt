@@ -28,13 +28,3 @@ catkin_package(
         CATKIN_DEPENDS rospy std_msgs aslan_msgs
 )
 
-install(DIRECTORY launch/
-        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
-        PATTERN ".svn" EXCLUDE)
-
-install(DIRECTORY scripts/imgs/
-        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/imgs
-        PATTERN ".svn" EXCLUDE)
-
-install(FILES scripts/Aslan_Icon.png scripts/Aslan_Autonomy.png
-        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
