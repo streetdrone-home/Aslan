@@ -243,8 +243,7 @@ int sd_vehicle_interface::RUN(int argc, char **argv)
 					FinalDBWTorqueRequest_Pc = speedcontroller::CalculateTorqueRequestEnv200(TargetTwistLinear_Mps, CurrentTwistLinearSD_Mps_Final, P_Contribution_Pc, I_Contribution_Pc, D_Contribution_Pc, FF_Contribution_Pc);
 				}
 			
-				cout <<_sd_vehicle <<" TwistAngular " <<  setw(8) << TargetTwistAngular_Degps << " Steer " <<  setw(8) << (int)FinalDBWSteerRequest_Pc << endl;
-				//cout << _sd_vehicle << " TwistLinear " <<  setw(8) <<TargetTwistLinear_Mps << " Current_V "<<  setw(4)  << CurrentTwistLinearCANSD_Mps << " Torque "<<  setw(2)  << (int)FinalDBWTorqueRequest_Pc << " P " <<  setw(2) << P_Contribution_Pc << " I " <<  setw(2) << I_Contribution_Pc << " D " <<  setw(2) << D_Contribution_Pc << " FF " <<  setw(2) << FF_Contribution_Pc << endl;
+		publish_states(current_Twist, current_GPS, current_IMU);
 
         loop_rate.sleep(); //And loop
         ros::spinOnce();
