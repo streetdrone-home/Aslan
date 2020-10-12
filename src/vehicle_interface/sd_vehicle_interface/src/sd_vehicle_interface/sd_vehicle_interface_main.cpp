@@ -30,10 +30,10 @@
 
 
 #include "ros/ros.h"
-#include "check_message_alive.h"
+#include "sd_vehicle_interface/sd_vehicle_interface.h"
 int main(int argc, char **argv)
 {
-	check_message_alive diag_msg;
-	diag_msg.RUN(argc, argv);
+	sd_vehicle_interface sd_vi;
+	sd_vi.RUN(argc, argv);
 	return 0;
 }
