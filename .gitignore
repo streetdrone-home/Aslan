@@ -18,3 +18,4 @@ src/cmake-build-debug/
 
 
 .stl.zip
+*.stl.zip
